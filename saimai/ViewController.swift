@@ -41,7 +41,7 @@ class ViewController: UIViewController, GMSMapViewDelegate {
         if aTitle.backgroundColor == UIColor.white {
             radius = Double(txtRadius.text!) ?? 0.0
             txtRadius.resignFirstResponder()
-            if (isSch != 0) && (isLcn != 0) && (radius != 0.0) {
+            if (isSch != 0) && (isLcn != 0) && (radius != 0.0) && (c != 0) {
                 aTitle.backgroundColor = hexStringToUIColor(hex: "#ff605c")
                 mapView.clear()
                 marker.map = mapView
